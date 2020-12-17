@@ -1,5 +1,5 @@
 <template>
-  <div id="main" :class="isDay ? 'day' : 'night'">
+  <div id="main">
     <div class="container my-5">
       <h1 class="title text-center">Weather in</h1>
       <form class="search-location" v-on:submit.prevent="getWeather">
@@ -23,32 +23,12 @@
           </div>
 
           <div icon="snowy" v-if="snowy">
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+           
           </div>
 
           <div icon="stormy" v-if="stormy">
             <span class="cloud"></span>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+            
           </div>
           <div icon="cloudy" v-if="cloudy">
             <span class="cloud"></span>
